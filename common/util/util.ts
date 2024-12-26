@@ -235,7 +235,7 @@ export function extractText(subtitle: SubtitleModel, surroundingSubtitles: Subti
     const interval = [subtitle.start, subtitle.end];
     return joinSubtitles(
         surroundingSubtitles
-            .filter((s) => subtitleIntersectsTimeInterval(s, interval))
+//            .filter((s) => subtitleIntersectsTimeInterval(s, interval))
             .filter((s) => track === undefined || s.track === track)
     );
 }
